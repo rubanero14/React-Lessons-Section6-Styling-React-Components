@@ -6,8 +6,13 @@
     font-weight: bold;
     display: block;
     margin-bottom: 0.5rem;
+    color: #333;
   }
-  
+
+  .form-control.invalid label {
+    color: red;
+  }
+
   .form-control input {
     display: block;
     width: 100%;
@@ -15,6 +20,12 @@
     font: inherit;
     line-height: 1.5rem;
     padding: 0 0.25rem;
+    background: transparent;
+  }
+
+  .form-control.invalid input {
+    border: 1px solid #ccc;
+    background: rgb(243, 136, 136);
   }
   
   .form-control input:focus {
@@ -22,4 +33,3 @@
     background: #fad0ec;
     border-color: #8b005d;
   }
-  
